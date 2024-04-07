@@ -34,7 +34,7 @@ const Register = () => {
           "Content-Type":"multipart/form-data"
         }
       }
-      const res=await axios.post("http://localhost:8000/register",formData,config);
+      const res=await axios.post("https://image-upload-project-using-mern-api.vercel.app/register",formData,config);
       if(res.data.status===401 || !res.data){
         console.log("error");
       }else{
