@@ -10,7 +10,7 @@ const Home = () => {
   const [show, setShow] = useState(false);
   // console.log(data)
   const getUserData = async () => {
-    const res = await axios.get("http://localhost:8000/getdata", {
+    const res = await axios.get("https://image-upload-project-using-mern-api.vercel.app/getdata", {
       headers: {
         "Content-Type": "application/json"
       }
@@ -23,7 +23,7 @@ const Home = () => {
   }
   const dltUser=async(id)=>{
     console.log(`http://localhost:8000/${id}`)
-    const res = await axios.delete(`http://localhost:8000/${id}`,{
+    const res = await axios.delete(`https://image-upload-project-using-mern-api.vercel.app/${id}`,{
       headers: {
         "Content-Type": "application/json"
       }
