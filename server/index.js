@@ -11,7 +11,11 @@ app.get('/',(req,res)=>{
 
 
 app.use(express.json())
-app.use(cors());
+app.use(cors({
+    origin:['https://image-upload-project-using-mern.vercel.app'],
+    methods:['POST','GET'],
+    credentials:true
+}));
 app.use(router);
 app.use("/uploads",express.static("./uploads"));
 app.listen(port, () => {
