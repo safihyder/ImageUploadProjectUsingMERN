@@ -12,8 +12,8 @@ app.get('/',(req,res)=>{
 
 app.use(express.json())
 app.use(cors({
-    origin:['*'],
-    methods:['POST','GET'],
+    origin:['https://image-upload-project-using-mern-5fkaicgpg-safihyders-projects.vercel.app'],
+    methods:['POST','GET','DELETE'],
     credentials:true
 }));
 app.use(router);
