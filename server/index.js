@@ -12,7 +12,7 @@ app.get('/',(req,res)=>{
 
 app.use(express.json())
 app.use(cors({
-    origin:['https://image-upload-project-using-mern-5fkaicgpg-safihyders-projects.vercel.app'],
+    origin:['https://image-upload-project-using-mern-5fkaicgpg-safihyders-projects.vercel.app/'],
     methods:['POST','GET','DELETE'],
     credentials:true
 }));
