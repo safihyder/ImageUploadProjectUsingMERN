@@ -16,23 +16,8 @@ app.use(cors({
     methods:['POST','GET','DELETE'],
     credentials:true
 },
-             {
-    origin:['https://image-upload-project-using-mern.vercel.app/register'],
-    methods:['POST','GET','DELETE','PUT'],
-    credentials:true
-}
             ));
-app.options("",cors({
-    origin:['https://image-upload-project-using-mern.vercel.app'],
-    methods:['POST','GET','DELETE'],
-    credentials:true
-},
-             {
-    origin:['https://image-upload-project-using-mern.vercel.app/register'],
-    methods:['POST','GET','DELETE','PUT'],
-    credentials:true
-}
-            ));
+
 app.use(router);
 app.use("/uploads",express.static("./uploads"));
 app.listen(port, () => {
