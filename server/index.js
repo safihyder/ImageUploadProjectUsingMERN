@@ -18,7 +18,7 @@ app.use(cors({
 },
              {
     origin:['https://image-upload-project-using-mern.vercel.app/register'],
-    methods:['POST','GET','DELETE'],
+    methods:['POST','GET','DELETE','PUT'],
     credentials:true
 }
             ));
